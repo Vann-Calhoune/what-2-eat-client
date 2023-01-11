@@ -53,7 +53,7 @@ function FoodList({setFoodArray , foodArray}) {
     const [newRating, setNewRating] = useState('');
     
     const updateFoodRating = (id) => {
-        Axios.put("http://localhost:3001/update", { rating: newRating, id: id }).then((response) => {
+        Axios.put("https://what-2-eat-server.herokuapp.com/update", { rating: newRating, id: id }).then((response) => {
             setFoodArray(foodArray.map((val) => {
                 return val.id === id ? {id: val.id, name: val.name, type: val.type, location: val.location, recommendation: val.recommendation, price: val.price, rating: val.newRating, comments: val.comments} : val;
         }));
@@ -63,7 +63,7 @@ function FoodList({setFoodArray , foodArray}) {
     }
 
     const deleteFood = (id) => {
-        Axios.delete(`http://localhost:3001/delete/${id}`).then(() => {
+        Axios.delete(`https://what-2-eat-server.herokuapp.com/delete/${id}`).then(() => {
            setFoodArray(foodArray.filter((val) => {
             return val.id !== id
            })) 
@@ -75,7 +75,7 @@ function FoodList({setFoodArray , foodArray}) {
     
 
     const getFood = () => {
-        Axios.get('http://localhost:3001/food').then((response) => {
+        Axios.get('https://what-2-eat-server.herokuapp.com/food').then((response) => {
         setFoodArray(response.data);
     });
     }

@@ -29,7 +29,7 @@ gap: 10px;
 `
  
 
-function RandomFood({ randomItem, setRandomItem }) {
+function RandomFood({ setRandomItem }) {
 
     const [searchType, setSearchType] = useState('');
     const [searchPrice, setSearchPrice] = useState('');
@@ -38,7 +38,7 @@ function RandomFood({ randomItem, setRandomItem }) {
     
     const chooseRandom = (e) => {
       e.preventDefault()
-      Axios.get(`http://localhost:3001/random?type=${searchType}&price=${searchPrice}&rating=${searchRating}`)
+      Axios.get(`https://what-2-eat-server.herokuapp.com/random?type=${searchType}&price=${searchPrice}&rating=${searchRating}`)
       .then((response) => {
         setRandomItem(response.data);
       })

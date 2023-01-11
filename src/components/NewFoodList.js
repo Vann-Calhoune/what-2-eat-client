@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect } from "react"
 import Axios from "axios"
 import styled from "styled-components"
 import exit from '../assets/delete.png'
@@ -31,7 +31,7 @@ justify-content: space-between;
 function NewFoodList({setNewFoodArray , newFoodArray}) {
 
   const deleteFood = (id) => {
-    Axios.delete(`http://localhost:3001/newdelete/${id}`).then(() => {
+    Axios.delete(`https://what-2-eat-server.herokuapp.com/newdelete/${id}`).then(() => {
        setNewFoodArray(newFoodArray.filter((val) => {
         return val.id !== id
        })) 
@@ -43,7 +43,7 @@ function NewFoodList({setNewFoodArray , newFoodArray}) {
   
   
   const getFood = () => {
-    Axios.get('http://localhost:3001/newfood').then((response) => {
+    Axios.get('https://what-2-eat-server.herokuapp.com/newfood').then((response) => {
     setNewFoodArray(response.data);
   });
   }

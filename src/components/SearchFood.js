@@ -37,7 +37,7 @@ const [searchRating, setSearchRating] = useState('');
 
 const searchRestaurants = (e) => {
   e.preventDefault()
-  Axios.get(`http://localhost:3001/search?type=${searchType}&price=${searchPrice}&rating=${searchRating}`)
+  Axios.get(`https://what-2-eat-server.herokuapp.com/search?type=${searchType}&price=${searchPrice}&rating=${searchRating}`)
   .then((response) => {
     setSearchResults(response.data);
   })
