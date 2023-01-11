@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.69c0a583.css","mappings":"AAAA,EACE,qBAAsB,CAEtB,mCAAuC,CADvC,QAEF","sources":["App.css"],"sourcesContent":["* {\n  box-sizing: border-box;\n  margin: 0;\n  font-family: 'Varela Round', sans-serif;\n}\n\n\n\n\n\n\n\n"],"names":[],"sourceRoot":""}
