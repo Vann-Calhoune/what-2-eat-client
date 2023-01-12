@@ -56,6 +56,7 @@ function FoodToTry({setNewFoodArray , newFoodArray}) {
         e.preventDefault()
         Axios.post('https://what-2-eat-server.herokuapp.com/newcreate', {name: newName, type: newType, location: newLocation, price: newPrice, comments: newComments
     }).then(() => {
+        alert("Restaurant added!")
         setNewFoodArray([...newFoodArray, {
             name: newName, type: newType, location: newLocation, price: newPrice, comments: newComments
         }]);

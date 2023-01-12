@@ -57,6 +57,7 @@ function FoodForm({ setFoodArray, foodArray}) {
        e.preventDefault()
         Axios.post('https://what-2-eat-server.herokuapp.com/create', {name: name, type: type, location: location, recommendation: recommendation, price: price, rating: rating, comments: comments
     }).then(() => {
+        alert("Restaurant added!")
         setFoodArray([...foodArray, {
             name: name, type: type, location: location, recommendation: recommendation, price: price, rating: rating, comments: comments
         }]);
