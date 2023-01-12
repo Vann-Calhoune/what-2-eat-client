@@ -4,13 +4,6 @@ import styled from 'styled-components'
 import logo from '../assets/foodLogo.png'
 import menu from '../assets/menu.png'
 
-const ListStyle = styled.ul`
-list-style: none;
-display: flex;
-justify-content: flex-end;
-gap: 30px;
-padding: 0 30px;
-`
 
 const Logo = styled.img`
 width: 150px;
@@ -37,6 +30,9 @@ const Menu = styled.img`
 position: absolute;
 top: 40px;
 z-index: 500;
+:hover {
+  cursor: pointer;
+}
 
 
 `
@@ -85,7 +81,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navStyle = {
-    top: isOpen ? '130px' : '-300px'
+    top: isOpen ? '120px' : '-300px'
   };
 
 
@@ -100,7 +96,7 @@ function Navbar() {
         <Menu onClick={() => {setIsOpen(!isOpen)}} src={menu} alt='hamburger menu' />
         <LinkDiv style={navStyle}>
           <StyleLink onClick={() => {setIsOpen(!isOpen)}} className='navLink' to='/'>Home</StyleLink>
-          <StyleLink onClick={() => {setIsOpen(!isOpen)}}className='navLink'  to='/List'>List</StyleLink>
+          <StyleLink onClick={() => {setIsOpen(!isOpen)}}className='navLink'  to='/Search'>Search</StyleLink>
           <StyleLink onClick={() => {setIsOpen(!isOpen)}}className='navLink'  to='/Random'>Random</StyleLink>
         </LinkDiv>
       </RightSide>  

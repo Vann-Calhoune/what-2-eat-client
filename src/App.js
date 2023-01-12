@@ -2,7 +2,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import List from './pages/List';
+import Search from './pages/Search';
 import Random from './pages/Random';
 import Footer from './components/Footer';
 
@@ -14,7 +14,7 @@ function App() {
       <Navbar  />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/List' element={<List />} />
+        <Route path='/Search' element={<Search />} />
         <Route path='/Random' element={<Random />} />
       </Routes>
       <Footer />
