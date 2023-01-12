@@ -4,10 +4,14 @@ import styled from 'styled-components'
 
 const SearchForm = styled.div`
 display: flex;
-align-items: center;
 justify-content: center;
-margin-top: 15px;
 gap: 10px;
+margin: 0 auto;
+margin-top: 15px;
+border-radius: 10px;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+padding: 20px;
+
 > button {
   border-radius: 10px;
   background-color: crimson;
@@ -23,7 +27,18 @@ gap: 10px;
 > select {
   border-radius: 10px;
   padding: 3px;
+  text-align: center;
 }
+@media (max-width: 500px) {
+  flex-direction: column;
+  width: 200px;
+  > button {
+    width: 75px;
+    margin: 0 auto;
+  }
+  
+}
+
 
 
 `

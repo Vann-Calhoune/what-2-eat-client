@@ -9,7 +9,6 @@ margin: 0 auto;
 width: 300px;
 gap: 5px;
 padding-bottom: 20px;
-// border: 1px solid black;
 margin: 10px;
 margin-bottom: 20px;
 padding: 10px;

@@ -7,9 +7,11 @@ import Random from './pages/Random';
 import Footer from './components/Footer';
 
 function App() {
+
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar  />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/List' element={<List />} />

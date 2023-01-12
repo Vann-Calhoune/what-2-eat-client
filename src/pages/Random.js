@@ -4,7 +4,11 @@ import RandomFood from '../components/RandomFood'
 import RandomItem from '../components/RandomItem'
 
 const RandomDiv = styled.div`
+display: flex;
 text-align: center;
+flex-direction: column;
+text-align: center;
+align-items: center;
 padding: 10px;
 background-color: #FDF5DF;
 `

@@ -4,7 +4,10 @@ import SearchFood from '../components/SearchFood'
 import SearchFoodList from '../components/SearchFoodList';
 
 const SearchMenu = styled.div`
+display: flex;
+flex-direction: column;
 text-align: center;
+align-items: center;
 padding: 10px;
 background-color: #FDF5DF;
 `
