@@ -33,7 +33,6 @@ padding: 15px;
 border-radius: 10px;
 background-color: white;
 width: 300px;
-height: 275px;
 gap: 10px;
 
 `
@@ -96,7 +95,7 @@ function FoodList({setFoodArray , foodArray}) {
                         </TopDiv>
                         <p>Type: {val.type}</p>
                         <p>Location: {val.location}</p>
-                        <p>Recommendation: {val.recommendation}</p>
+                        <p>Food Recommendation: {val.recommendation}</p>
                         <p>Price: {val.price}</p>
                         <p>Rating: {val.rating}</p>
                         <p>Comments: {val.comments}</p>

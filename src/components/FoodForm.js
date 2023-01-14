@@ -100,7 +100,7 @@ function FoodForm({ setFoodArray, foodArray}) {
         <input value={location} type='text' onChange={(e) => {
             setLocation(e.target.value);
         }}></input>
-        <label>Recommendation:</label>
+        <label>Food Recommendation:</label>
         <input value={recommendation} type='text' onChange={(e) => {
             setRecommendation(e.target.value);
         }}></input>
