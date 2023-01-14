@@ -6,3 +6,5 @@ I wanted to create a project to better my understanding of SQL. This project has
 
 Include: React, Node.js, Express.js, MySQL and Styled-Components for styling.
 
+View app: https://what-2-eat-tracker.netlify.app/
+
